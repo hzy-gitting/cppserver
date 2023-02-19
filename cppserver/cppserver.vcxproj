@@ -144,12 +144,28 @@
     <ClCompile Include="HTTPRequest.cpp" />
     <ClCompile Include="HTTPRequestHandler.cpp" />
     <ClCompile Include="HTTPResponse.cpp" />
+    <ClCompile Include="TCPAcceptEvent.cpp" />
+    <ClCompile Include="TCPAcceptEventHandler.cpp" />
+    <ClCompile Include="TCPReadEvent.cpp" />
+    <ClCompile Include="TCPReadEventHandler.cpp" />
+    <ClCompile Include="TCPSendEvent.cpp" />
+    <ClCompile Include="TCPSendEventHandler.cpp" />
+    <ClCompile Include="TCPServer.cpp" />
+    <ClCompile Include="WinsockTCPServer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPPHTTPServer.h" />
     <ClInclude Include="HTTPRequest.h" />
     <ClInclude Include="HTTPRequestHandler.h" />
     <ClInclude Include="HTTPResponse.h" />
+    <ClInclude Include="TCPAcceptEvent.h" />
+    <ClInclude Include="TCPAcceptEventHandler.h" />
+    <ClInclude Include="TCPReadEvent.h" />
+    <ClInclude Include="TCPReadEventHandler.h" />
+    <ClInclude Include="TCPSendEvent.h" />
+    <ClInclude Include="TCPSendEventHandler.h" />
+    <ClInclude Include="TCPServer.h" />
+    <ClInclude Include="WinsockTCPServer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

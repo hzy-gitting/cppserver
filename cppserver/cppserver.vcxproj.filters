@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\tcp">
+      <UniqueIdentifier>{5aca6e3b-d6a5-41b1-b7f5-34729883802a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tcp">
+      <UniqueIdentifier>{9e8a391a-a54b-4a28-a380-cd21e3928bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\tcp\event">
+      <UniqueIdentifier>{8b97da45-3862-4a3c-bd66-3262559fa6b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tcp\event">
+      <UniqueIdentifier>{d6878b53-5484-48f7-b786-da0e2d0005f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\tcp\eventhandler">
+      <UniqueIdentifier>{17bd1f1b-20fb-4645-bf1d-7f65e531d7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tcp\eventhandler">
+      <UniqueIdentifier>{2a6c98df-9a73-497b-a34f-5baa3742551d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cppserver.cpp">
@@ -30,6 +48,30 @@
     <ClCompile Include="HTTPResponse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="TCPServer.cpp">
+      <Filter>源文件\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="WinsockTCPServer.cpp">
+      <Filter>源文件\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPReadEvent.cpp">
+      <Filter>源文件\tcp\event</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPSendEvent.cpp">
+      <Filter>源文件\tcp\event</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPAcceptEvent.cpp">
+      <Filter>源文件\tcp\event</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPReadEventHandler.cpp">
+      <Filter>源文件\tcp\eventhandler</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPSendEventHandler.cpp">
+      <Filter>源文件\tcp\eventhandler</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPAcceptEventHandler.cpp">
+      <Filter>源文件\tcp\eventhandler</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPPHTTPServer.h">
@@ -43,6 +85,30 @@
     </ClInclude>
     <ClInclude Include="HTTPResponse.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServer.h">
+      <Filter>头文件\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="WinsockTCPServer.h">
+      <Filter>头文件\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPReadEvent.h">
+      <Filter>头文件\tcp\event</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPSendEvent.h">
+      <Filter>头文件\tcp\event</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPAcceptEvent.h">
+      <Filter>头文件\tcp\event</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPReadEventHandler.h">
+      <Filter>头文件\tcp\eventhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPSendEventHandler.h">
+      <Filter>头文件\tcp\eventhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPAcceptEventHandler.h">
+      <Filter>头文件\tcp\eventhandler</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
