@@ -51,9 +51,6 @@
     <ClCompile Include="TCPServer.cpp">
       <Filter>源文件\tcp</Filter>
     </ClCompile>
-    <ClCompile Include="WinsockTCPServer.cpp">
-      <Filter>源文件\tcp</Filter>
-    </ClCompile>
     <ClCompile Include="TCPReadEvent.cpp">
       <Filter>源文件\tcp\event</Filter>
     </ClCompile>
@@ -72,6 +69,9 @@
     <ClCompile Include="TCPAcceptEventHandler.cpp">
       <Filter>源文件\tcp\eventhandler</Filter>
     </ClCompile>
+    <ClCompile Include="SingleThreadBlockTCPServer.cpp">
+      <Filter>源文件\tcp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPPHTTPServer.h">
@@ -87,9 +87,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="TCPServer.h">
-      <Filter>头文件\tcp</Filter>
-    </ClInclude>
-    <ClInclude Include="WinsockTCPServer.h">
       <Filter>头文件\tcp</Filter>
     </ClInclude>
     <ClInclude Include="TCPReadEvent.h">
@@ -109,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="TCPAcceptEventHandler.h">
       <Filter>头文件\tcp\eventhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadBlockTCPServer.h">
+      <Filter>头文件\tcp</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

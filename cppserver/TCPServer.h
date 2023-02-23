@@ -6,16 +6,14 @@
 class TCPServer
 {
 public:
-	virtual int listen(char *ip,int port) = 0;
-	virtual void send() = 0;
-	virtual void read() = 0;
-	
+	virtual int start(char *ip,int port) = 0;
+	virtual void send(char *buf, int length) = 0;
 	void registerReadEventHandler(TCPReadEventHandler *);
 	void registerSendEventHandler(TCPSendEventHandler *);
 	void registerAcceptEventHandler(TCPAcceptEventHandler *);
-private:
-	void onRead();
-	void onSend();
+protected:
+	void onRead(char* buf, int length);
+	void onSend(int length);
 	void onAccept();
 
 private:
