@@ -6,5 +6,7 @@ class SingleThreadBlockTCPServer :
 	// Í¨¹ý TCPServer ¼Ì³Ð
 	virtual int start(char* ip, int port) override;
 	virtual void send(char* buf, int length) override;
+	int initializeWinsock();
+	addrinfo* getAddrInfo();
 };
 
