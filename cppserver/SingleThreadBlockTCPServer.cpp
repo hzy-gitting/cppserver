@@ -6,8 +6,18 @@ int SingleThreadBlockTCPServer::start(char* ip, int port)
 {
 	initializeWinsock();
 	struct addrinfo* result = getAddrInfo();
-
+	SOCKET listenSocket = createListenSocket(result);
 	return 0;
+}
+
+SOCKET SingleThreadBlockTCPServer::createListenSocket(addrinfo* result)
+{
+	SOCKET listenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
+	if (listenSocket == INVALID_SOCKET) {
+		std::cout << "create listenSocket failed ";
+		return -1;
+	}
+	return listenSocket;
 }
 
 void SingleThreadBlockTCPServer::send(char* buf, int length)
