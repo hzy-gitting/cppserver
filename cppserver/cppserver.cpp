@@ -18,9 +18,12 @@
   对HTTP请求体进行响应，返回响应体
  ***/
 #include <iostream>
+#include"SingleThreadBlockTCPServer.h"
 
 int main()
 {
+	TCPServer* tcpServer = new SingleThreadBlockTCPServer;
+	tcpServer->start(NULL, 12442);
     std::cout << "Hello World!\n";
 }
 
