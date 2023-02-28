@@ -31,21 +31,21 @@
     <Filter Include="源文件\tcp\eventhandler">
       <UniqueIdentifier>{2a6c98df-9a73-497b-a34f-5baa3742551d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\http">
+      <UniqueIdentifier>{14e67a2b-4862-4257-9124-e8b84f1e4409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\http">
+      <UniqueIdentifier>{2df78873-611b-4710-889e-9bf91e34a74f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\exception">
+      <UniqueIdentifier>{512c66e2-82cf-448b-9f91-c9f96799f77f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\exception">
+      <UniqueIdentifier>{d2f42218-87fc-441c-9ff0-6643c7f0bd42}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cppserver.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="CPPHTTPServer.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="HTTPRequestHandler.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="HTTPRequest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="HTTPResponse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TCPServer.cpp">
@@ -72,20 +72,23 @@
     <ClCompile Include="SingleThreadBlockTCPServer.cpp">
       <Filter>源文件\tcp</Filter>
     </ClCompile>
+    <ClCompile Include="CPPHTTPServer.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPRequest.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPResponse.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTPRequestHandler.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>源文件\exception</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CPPHTTPServer.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HTTPRequestHandler.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HTTPRequest.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HTTPResponse.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="TCPServer.h">
       <Filter>头文件\tcp</Filter>
     </ClInclude>
@@ -109,6 +112,21 @@
     </ClInclude>
     <ClInclude Include="SingleThreadBlockTCPServer.h">
       <Filter>头文件\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="CPPHTTPServer.h">
+      <Filter>头文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPRequest.h">
+      <Filter>头文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPRequestHandler.h">
+      <Filter>头文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPResponse.h">
+      <Filter>头文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>头文件\exception</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
