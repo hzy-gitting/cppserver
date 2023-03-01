@@ -30,18 +30,18 @@ Exception::Exception(const char* message):
 
 Exception::~Exception()
 {
-	delete this->message;
+	delete [] (this->message);
 }
 
 Exception::Exception(const Exception& e)
 {
 	this->code = e.code;
-	this->message = e.message;
+	deepCloneMessage(e.message);
 }
 
-void Exception::print()
+void Exception::print() const
 {
-	std::cout << "Exception" << "[" << code << "]"": " << message << std::endl;
+	std::cout << "Exception" << "(code=" << code << ")"": " << message << std::endl;
 }
 
 void Exception::setCode(int code)

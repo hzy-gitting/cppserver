@@ -12,7 +12,7 @@ public:
 	~Exception();
 	Exception(const Exception& e);
 
-	virtual void print();
+	virtual void print() const;
 	void setCode(int code);
 	int getCode();
 	void setMessage(const char* msg);

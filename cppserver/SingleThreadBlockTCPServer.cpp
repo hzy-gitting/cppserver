@@ -2,11 +2,14 @@
 #include<iostream>
 #pragma comment (lib, "Ws2_32.lib")
 #include<ws2tcpip.h>
+#include"Exception.h"
+
 int SingleThreadBlockTCPServer::start(char* ip, int port)
 {
 	initializeWinsock();
 	struct addrinfo* result = getAddrInfo();
 	SOCKET listenSocket = createListenSocket(result);
+	bind(listenSocket, result->ai_addr, result->ai_addrlen);
 	return 0;
 }
 
@@ -14,8 +17,7 @@ SOCKET SingleThreadBlockTCPServer::createListenSocket(addrinfo* result)
 {
 	SOCKET listenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
 	if (listenSocket == INVALID_SOCKET) {
-		std::cout << "create listenSocket failed ";
-		return -1;
+		throw Exception("create listenSocket failed");
 	}
 	return listenSocket;
 }
@@ -32,8 +34,7 @@ int SingleThreadBlockTCPServer::initializeWinsock()
 	int iResult;
 	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != 0) {
-		std::cout << "WSAStartup failed with error = " + iResult;
-		return -1;
+		throw Exception(iResult,"WSAStartup failed");
 	}
 	return 0;
 }
