@@ -44,11 +44,11 @@ void testException() {
 }
 int main()
 {
+	TCPServer* tcpServer = new SingleThreadBlockTCPServer();
 	try {
-		testException();
+		tcpServer->start(NULL, 5655);
 	}
 	catch (const Exception& e) {
-		std::cout << "Exception occured :" << std::endl;
 		e.print();
 	}
 }
